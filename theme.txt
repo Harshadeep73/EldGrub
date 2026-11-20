@@ -1,6 +1,6 @@
 # --- Global -----------------------------------------------------------------
 title-text: ""
-desktop-image: "background.png"
+desktop-image: "images/background.png"
 desktop-image-scale-method: "crop"
 desktop-color: "#070a08"
 
@@ -8,7 +8,7 @@ message-font: "EB Garamond Regular 18"
 message-color: "#eadfc0"
 message-bg-color: "#080b09"
 
-terminal-box: "terminal_box_*.png"
+terminal-box: "images/terminal_box_*.png"
 terminal-font: "DejaVu Sans Mono Regular 16"
 terminal-left: "10%"
 terminal-top: "10%"
@@ -28,9 +28,9 @@ terminal-border: "18"
     item_color = "#d6c69c"
     selected_item_color = "#f9eecb"
 
-    item_pixmap_style = "entry_box_*.png"
-    selected_item_pixmap_style = "selected_*.png"
-    menu_pixmap_style = "menu_*.png"
+    item_pixmap_style = "images/entry_box_*.png"
+    selected_item_pixmap_style = "images/selected_*.png"
+    menu_pixmap_style = "images/menu_*.png"
 
     item_height = 80
     item_padding = 0
@@ -42,8 +42,8 @@ terminal-border: "18"
 
     scrollbar = true
     scrollbar_width = 10
-    scrollbar_frame = "scrollbar_frame_*.png"
-    scrollbar_thumb = "scrollbar_thumb_*.png"
+    scrollbar_frame = "images/scrollbar_frame_*.png"
+    scrollbar_thumb = "images/scrollbar_thumb_*.png"
     scrollbar_slice = "east"
     scrollbar_left_pad = 0
     scrollbar_right_pad = 0
@@ -53,7 +53,7 @@ terminal-border: "18"
 
 # --- Countdown --------------------------------------------------------------
 + image {
-    file = "footer_panel.png"
+    file = "images/footer_panel.png"
     left = 100%-560
     top = 76%
     width = 520
