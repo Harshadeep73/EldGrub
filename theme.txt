@@ -1,0 +1,104 @@
+# ============================================================================
+#  EldGrub - a GRUB 2 theme inspired by the Lands Between
+#
+#  Designed for 16:9 displays (1920x1080 recommended, 1366x768 supported).
+#  Install with ../install.sh or copy this directory to
+#  /boot/grub/themes/EldGrub and set GRUB_THEME in /etc/default/grub.
+# ============================================================================
+
+# --- Global -----------------------------------------------------------------
+title-text: ""
+desktop-image: "background.png"
+desktop-image-scale-method: "crop"
+desktop-color: "#070a08"
+
+message-font: "EB Garamond Regular 18"
+message-color: "#eadfc0"
+message-bg-color: "#080b09"
+
+terminal-box: "terminal_box_*.png"
+terminal-font: "DejaVu Sans Mono Regular 16"
+terminal-left: "10%"
+terminal-top: "10%"
+terminal-width: "80%"
+terminal-height: "80%"
+terminal-border: "18"
+
+# --- Boot menu --------------------------------------------------------------
++ boot_menu {
+    left = 100%-560
+    top = 17%
+    width = 520
+    height = 58%
+
+    item_font = "Cinzel Regular 23"
+    selected_item_font = "Cinzel Regular 23"
+    item_color = "#d6c69c"
+    selected_item_color = "#f9eecb"
+
+    item_pixmap_style = "entry_box_*.png"
+    selected_item_pixmap_style = "selected_*.png"
+    menu_pixmap_style = "menu_*.png"
+
+    item_height = 80
+    item_padding = 0
+    item_spacing = 8
+
+    icon_width = 42
+    icon_height = 42
+    item_icon_space = 12
+
+    scrollbar = true
+    scrollbar_width = 10
+    scrollbar_frame = "scrollbar_frame_*.png"
+    scrollbar_thumb = "scrollbar_thumb_*.png"
+    scrollbar_slice = "east"
+    scrollbar_left_pad = 0
+    scrollbar_right_pad = 0
+    scrollbar_top_pad = 0
+    scrollbar_bottom_pad = 0
+}
+
+# --- Countdown --------------------------------------------------------------
++ image {
+    file = "footer_panel.png"
+    left = 100%-560
+    top = 76%
+    width = 520
+    height = 100
+}
+
++ label {
+    id = "__timeout__"
+    text = "The grace fades in %d seconds"
+    font = "EB Garamond Regular 20"
+    color = "#e0d2ae"
+    align = "center"
+    left = 100%-560
+    top = 77%
+    width = 520
+    height = 30
+}
+
++ progress_bar {
+    id = "__timeout__"
+    left = 100%-550
+    top = 81%
+    width = 500
+    height = 6
+    border_color = "#20231b"
+    bg_color = "#20231b"
+    fg_color = "#b08a44"
+}
+
+# --- Key help ---------------------------------------------------------------
++ label {
+    text = "@KEYMAP_SHORT@"
+    font = "EB Garamond Regular 16"
+    color = "#f4ecd8"
+    align = "left"
+    left = 2%
+    top = 96%
+    width = 70%
+    height = 30
+}
