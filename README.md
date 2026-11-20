@@ -27,7 +27,7 @@ Designed for 16:9 displays.
 
 ## Preview (Not all Distros are here)
 
-preview.png 
+![EldGrub Preview](./preview.png)
 
 ## Notes
 
