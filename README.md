@@ -25,6 +25,10 @@ Designed for 16:9 displays.
 
 4. Reboot to apply the theme.
 
+## Preview (Not all Distros are here)
+
+preview.png 
+
 ## Notes
 
 Make sure all theme assets are present in their respective directories and that the GRUB configuration points to the correct theme path.
